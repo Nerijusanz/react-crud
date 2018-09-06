@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-//redux setup
-import {Provider} from 'react-redux';
-import store from './store';
-//main component
+// redux setups
+import { Provider } from 'react-redux';
+import store from './store/store';
+
+// App component
 import App from './App';
 
 ReactDOM.render(
@@ -13,4 +14,3 @@ ReactDOM.render(
     </Provider>,
     document.getElementById('root')
 );
-

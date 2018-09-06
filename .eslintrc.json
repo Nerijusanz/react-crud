@@ -1,0 +1,29 @@
+{
+    "parserOptions": {
+        "ecmaVersion": 6,
+        "sourceType": "module",
+        "ecmaFeatures": {
+            "jsx": true,
+            "modules": true
+        }
+    },
+    "env":{
+        "node":true,
+        "browser": true,
+        "es6":true,
+        "jquery":true
+    },
+    "extends":["airbnb","standard-react"],
+   
+    "plugins":[
+        "react",
+        "jsx-a11y",
+        "import"
+    ],
+    "rules": {
+        "react/jsx-filename-extension": [0, { "extensions": [".js", ".jsx"] }],
+        "react/destructuring-assignment":0,
+        "no-unused-vars": 0,
+        "no-use-before-define":0
+    }
+}

@@ -1,15 +1,11 @@
-import React, { Component } from 'react';
-import {NavLink} from 'react-router-dom';
+import React from 'react';
+import { Link } from 'react-router-dom';
 
-class Navigation extends Component {
-  render() {
-    return (
-      <div>
-          <NavLink to="/">Home</NavLink>
-          <NavLink to="/games">Games</NavLink>
-      </div>
-    );    
-  }
-}
+const Navigation = () => (
+  <div className="ui two item menu">
+    <Link className="item" activeclassname="active" activeonlywhenexact="true" to="/">Home</Link>
+    <Link className="item" activeclassname="active" activeonlywhenexact="true" to="/games">Games</Link>
+  </div>
+);
 
 export default Navigation;

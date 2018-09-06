@@ -1,12 +1,6 @@
-import React, { Component } from 'react';
+import React from 'react';
 
-
-class Error extends Component {
-  render() {
-    return (
-      <h1>Error: path does not exists</h1>
-    );    
-  }
-}
-
+const Error = () => (
+  <h1>Error: path does not exists</h1>
+);
 export default Error;

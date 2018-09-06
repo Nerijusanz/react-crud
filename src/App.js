@@ -1,15 +1,9 @@
-import React, { Component } from 'react';
-import Routes from './routes';
+import React from 'react';
+import Routes from './routes/mainRouter';
 
-class App extends Component {
-  render() {
-    return (
-      <main>
-          <Routes/>
-      </main>
-
-    );    
-  }
-}
-
+const App = () => (
+  <div className="ui container">
+    <Routes />
+  </div>
+);
 export default App;
